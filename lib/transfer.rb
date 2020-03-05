@@ -19,7 +19,7 @@ class Transfer
       @receiver.deposit(@amount)
       @status = "complete"
     elsif @status == "complete"
-      "Transaction was already executed."
+      puts "Transaction was already executed."
     else
       @status = "rejected"
       return "Transaction rejected. Please check your account balance."
