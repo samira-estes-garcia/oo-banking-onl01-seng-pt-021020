@@ -14,7 +14,7 @@ class Transfer
   end
   
   def execute_transaction
-    if 
+    if @sender.balance > @amount && @status = ""
   end
   
   def reverse_transfer
